@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool</title>
+    <link rel="stylesheet" href="css/stilo.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <script src="./js/codigo.js"></script>
+    <script src="./js/formulario.js"></script>
+</head>
+
+<body>
+    <div id="agrupar">
+        <header id="cabecera">
+            <img id="bola" src="/img/bola8.png" alt="">
+            <div id="textopool">
+                Pool
+            </div>
+        </header>
+        <div id="contenedor-principal">
+            <div id="barra-menu">
+                <nav id="menu">
+                    <ul><a href="#barra-menu">Inicio</a></ul>
+                    <ul><a href="#articulos">Artículos</a></ul>
+                    <ul><a href="#articulo2">Nosotros</a></ul>
+                    <ul><a href="#articulo2">Contacto</a></ul>
+                </nav>
+            </div>
+            <section id="seccion">
+                <div id="seccion-uno">
+                    <video class="medidas" src="/media/bolas1.mp4" loop preload="auto" autoplay muted controls;></video>
+                </div>
+                <audio id="billar" controls preload="auto" src="/media/billar.mp3"></audio>
+                <audio preload="auto" src="/media/billar.ogg"></audio>
+                <audio id="alerta" preload="auto" src="/media/alerta.mp3"></audio>
+                <section class="section-container">
+                    <div id="articulos">
+                        <h1>Artículos</h1>
+                    </div>
+                    <div class="container-modulo">
+                        <article class="box">
+                            <div class="modulo1">
+                                <img id="img1" src="/img/bola.jpg" alt="">
+                                <h2>Noticia 1</h2>
+                                <p onmouseover="PlaySound('billar')" onmouseout="StopSound('billar')">Lorem ipsum
+                                    dolor sit amet consectetur, adipisicing elit. Sapiente aliquam modi
+                                    maiores nihil architecto voluptas, laudantium pariatur. Numquam, voluptatem. Vero
+                                    maxime ab delectus eaque aliquid. Sit omnis impedit doloremque veritatis.</p><br>
+
+                            </div>
+                            <div id="btn-ver">Ver Más</div>
+                        </article>
+                        <article class="box">
+                            <div class=" modulo2">
+                                <img id="img2" src="/img/mesa2.jpg" alt="">
+                                <h2>Noticia 2</h2>
+                                <p onmouseover="PlaySound('billar')" onmouseout="StopSound('billar')">Lorem ipsum dolor
+                                    sit amet, consectetur adipisicing elit. Odit facere nostrum
+                                    consequatur, tempore asperiores deleniti mollitia in voluptatum illo maiores quam
+                                    impedit, aliquid unde sapiente corporis ullam earum incidunt aspernatur!</p><br>
+                            </div>
+                            <div id="btn-ver2">Ver Más</div>
+                        </article>
+                        <article class="box">
+                            <div class="modulo3">
+                                <img id="img3" src="/img/billar3.jpg" alt="">
+                                <h2>Noticia 3</h2>
+                                <p onmouseover="PlaySound('billar')" onmouseout="StopSound('billar')">Lorem ipsum dolor
+                                    sit, amet consectetur adipisicing elit. Nesciunt ducimus aliquam
+                                    illo unde dolorum incidunt modi rem deserunt, nulla magnam cumque repudiandae,
+                                    delectus, qui quas reprehenderit. Velit, placeat qui? Laboriosam?</p><br>
+                            </div>
+                            <div id="btn-ver3">Ver Más</div>
+                        </article>
+                        <article class="box">
+                            <div class="modulo4">
+                                <img id="img4" src="/img/mesa1.jpg" alt="">
+                                <h2>Noticia 4</h2>
+                                <p onmouseover="PlaySound('billar')" onmouseout="StopSound('billar')">Lorem ipsum dolor
+                                    sit amet consectetur, adipisicing elit. Nulla eum laborum sit! Rem
+                                    voluptatum, accusantium quaerat autem libero quidem impedit, aut et iste eos
+                                    pariatur dignissimos commodi, reprehenderit eaque sunt?</p><br>
+                            </div>
+                            <div id="btn-ver4">Ver Más</div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="seccion2">
+                    <div id="articulo2">
+                        <h1>Nosotros</h1>
+                        <h1>Contacto</h1>
+                    </div>
+                    <div id="contenedor3">
+
+                        <div id="art4">
+                            <img id="img5" src="/img/mesa.jpg" alt="">
+                            <div id="parrafo">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde molestiae fugiat
+                                dolore hic numquam quia quo eos nesciunt. Expedita minima quia odio natus itaque rerum
+                                omnis quidem voluptate fugiat!
+                            </div>
+                        </div>
+                        <div id="columna-container">
+                            <div id="columna">
+                                <form name="miFormulario" id="miFormulario">
+                                    <input id="campo" type="text" name="nombre" placeholder="Nombre" required multiple
+                                        onchange="ValidaNombre()" onclick="Mostrarnombre()"><br>
+                                    <p id="msgNombre"></p>
+                                    <input id="campo1" type="email" placeholder="Email" required
+                                        onchange="Validacorreo()" onclick="Mostrarcorreo()"><br>
+                                    <p id="msgCorreo"></p>
+                                    <input id="campo2" type="tel" placeholder="Teléfono" required onchange="Validatel()"
+                                        onclick="Mostrartel()"><br>
+                                    <p id="msgTel"></p>
+                                    <textarea name="texto" id="text" cols="30" rows="10" placeholder="Su mensaje"
+                                        onchange="ValidaTexto()" onclick="Validatex()"></textarea><br>
+                                    <p id="msgText"></p>
+                                    <input type="submit" id="boton" value="Enviar">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <footer id="pie">
+            <h3 id="derechos"> Derechos reservados 2021</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
